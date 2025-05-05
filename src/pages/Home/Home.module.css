@@ -1,0 +1,197 @@
+.header{
+    padding: 7em 0px;
+    text-align: center;
+}
+.header .title{
+    font-size: 4rem;
+    line-height: 5rem;
+}
+.header p{
+    margin: 5rem auto;
+    max-width: 90rem;
+}
+.header a{
+    color: var(--white);
+    background-color: var(--green);
+    padding: 1.5rem 5rem;
+    border-radius: 7px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: all ease-in-out .3s;
+}
+.header a:hover{
+    background-color: var(--light-green);
+    transform: scale(1.1);
+}
+
+@media(max-width:1024px){
+    .header .title{
+        font-size: 3.2rem;
+    }
+}
+@media(max-width:768px){
+    .header .title{
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+}
+@media(max-width:480px){
+    .header{
+        padding: 5rem 0px;
+        text-align: start;
+    }
+    .header .title{
+        font-size: 2.2rem;
+    }
+    .header p{
+        line-height: 2.7rem;
+    }
+}
+
+/* :::::::::::: SECTION: BENEFICIOS :::::::::::: */
+
+.section__beneficios{
+    text-align: center;
+}
+.section__beneficios .title{
+    font-size: 4rem;
+    max-width: 80rem;
+    margin: 5rem auto;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid var(--white);
+    line-height: 6rem;
+}
+.section__beneficios .cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 3rem;
+}
+.section__beneficios .card{
+    text-align: start;
+}
+.section__beneficios .card__content{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all ease-in-out .3s;
+}
+.section__beneficios .card__content:hover{
+    background-color: var(--light-green);
+    color: var(--black);
+}
+.section__beneficios .card__content p{
+    margin: 2.5rem 0px;
+}
+.section__beneficios .card__content img{
+    height: 100%;
+    border-radius: 8px;
+}
+
+@media(max-width:1024px){
+    .section__beneficios .title{
+        font-size: 3.2rem;
+    }
+    .section__beneficios .cards{
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-flow: dense;
+    }
+}
+@media(max-width:768px){
+    .section__beneficios .title{
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+}
+@media(max-width:480px){
+    .section__beneficios .title{
+        font-size: 2.2rem;
+        text-align: start;
+        line-height: 4rem;
+    }
+    .section__beneficios .cards{
+        grid-template-columns: 1fr;
+    }
+    .section__beneficios .cards img{
+        height: 20rem;
+    }
+}
+
+/* :::::::::::: SECTION: VENTAJAS :::::::::::: */
+
+.section__ventajas .ventajas__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    column-gap: 5rem;
+}
+.ventajas__text .title{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.ventajas__text ul{
+    list-style:disc ;
+    margin: 3rem 0px 3rem 1.7rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.ventajas__text ul li{
+    line-height: 2.7rem;
+}
+.ventajas__img{
+    overflow: hidden;
+    border-radius: 8px;
+}
+.ventajas__img img{
+    transition: transform ease-in-out .3s;
+}
+.ventajas__img img:hover{
+    transform: scale(1.2);
+}
+
+@media(max-width:768px){
+    .section__ventajas .ventajas__content{
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
+    }
+}
+@media(max-width:480px){
+    .section__ventajas .title{
+        font-size: 2.2rem;
+        line-height: 4rem;
+    }
+}
+
+/* :::::::::::: SECTION: CARDS :::::::::::: */
+
+.section__cards .cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 3rem;
+    line-height: 2.7rem;
+}
+.section__cards .cards .card__content{
+    padding: 3rem;
+    transition: all ease-in-out .3s;
+    height: 100%;
+}
+.section__cards .card__content:hover{
+    background-color: var(--light-green);
+    color: var(--black);
+}
+.section__cards .card__img{
+    font-size: 3.5rem;
+}
+.section__cards .card__title{
+    font-size: 1.6rem;
+    margin: 2rem 0px;
+}
+
+@media(max-width:768px){
+    .section__cards .cards{
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+}

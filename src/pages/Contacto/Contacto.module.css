@@ -1,0 +1,159 @@
+.section__contacto .contacto__container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 5rem;
+    align-items: center;
+}
+.section__contacto .contacto__info{
+    max-width: 70rem;
+}
+.section__contacto .contacto__info .title{
+    line-height: 5rem;
+}
+.section__contacto .contacto__info>p{
+    margin: 3rem 0px;
+    line-height: 2.7rem;
+}
+
+@media(max-width:1024px){
+    .section__contacto .contacto__info .title{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+@media(max-width:768px){
+    .section__contacto .contacto__container{
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 7rem;
+    }
+}
+
+/* ::::::::::::: FORMULARIO ::::::::::::: */
+
+.section__contacto .form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.section__contacto .form .form__group{
+    display: flex;
+    flex-direction: column;
+}
+
+.section__contacto .form__group input,
+.section__contacto .form__group textarea{
+    background-color: var(--web-bg);
+    border: 1px solid var(--green);
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    color: var(--white);
+    outline: none;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.form__group input:focus,
+.form__group textarea:focus,
+.form__group input:not(:placeholder-shown),
+.form__group textarea:not(:placeholder-shown){
+    border: 2px solid var(--light-green); 
+}
+.form__group input:-webkit-autofill,
+.form__group textarea:-webkit-autofill{
+    box-shadow: 0 0 0 1000px var(--web-bg) inset; 
+    border: 2px solid var(--light-green); 
+    -webkit-text-fill-color: #ffffff ; 
+    transition: background-color 5000s ease-in-out 0s; 
+}
+
+.section__contacto .form__group textarea{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    resize: none;
+}
+.section__contacto .form__group .btn__enviar{
+    display: inline-block;
+    width: max-content;
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 1.2rem 5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+.section__contacto .form__group .btn__enviar:hover{
+    transform: scale(1.1);
+    background-color: var(--light-green);
+}
+
+/* ::::::::::::: FORMULARIO:ERRORES ::::::::::::: */
+.section__contacto .form__group__error input,
+.section__contacto .form__group__error textarea{
+    border-color: #EF4444;
+}
+.error__message{
+    margin: .7rem 0px;
+    color: #EF4444;
+}
+/* ::::::::::::: CONTACTO ::::::::::::: */
+
+.contacto__img{
+    width: 100%;
+}
+.contacto__img .img__container{
+    max-width: 35rem;
+    margin: 0 auto;
+}
+.contacto__img .link__email{
+    color: var(--white);
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 5rem;
+    padding: 1.5rem 0px;
+    border-radius: 8px;
+    transition: background-color ease-in-out .2s;
+}
+.contacto__img .link__email:hover{
+    background-color: var(--footer-bg);
+}
+.contacto__img .link__email i{
+    margin-right: 1rem;
+}
+.contacto__img ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    column-gap: 2rem;
+    font-size: 4rem;
+}
+.contacto__img ul a{
+    color: var(--green);
+}
+.contacto__img ul a:hover{
+    transform: scale(1.1);
+    color: var(--light-green);
+}
+
+@media(max-width:1024px){
+    .contacto__img .link__email{
+        font-size: 1.7rem;
+    }
+}
+@media(max-width:768px){
+    .contacto__img .img__container{
+        max-width: 30rem;
+    }
+}
+@media(max-width:480px){
+    .contacto__img .img__container{
+        max-width: 25rem;
+    }
+    .contacto__img .link__email{
+        font-size: 2rem;
+    }
+}

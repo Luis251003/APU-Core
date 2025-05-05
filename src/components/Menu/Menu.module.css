@@ -1,0 +1,102 @@
+.menu__container{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: end;
+    transition: all ease-in-out .5s;
+    pointer-events: none;
+}
+.menu__container.active{
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(3px);
+    pointer-events: all;
+}
+.menu__container .menu{
+    width: 80%;
+    max-width: 45rem;
+    background-color: var(--green);
+    border-radius: 4rem 0px 0px 4rem;
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    /*CAMBIAR*/
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all ease-in-out .5s;
+}
+.menu__container.active .menu{
+    opacity: 1;
+    transform: translateX(0%);
+}
+.menu .menu__header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+}
+
+.menu .menu__header p{
+    line-height: 3rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.menu .menu__header p span{
+    font-weight: 400;
+}
+
+.menu .menu__exit .btn__exit{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 2.5rem;
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color ease-in-out .2s;
+}
+.menu .menu__exit .btn__exit:hover{
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* ::::::::::: MENU:LINKS :::::::::::*/
+
+.menu__links .link{
+    color: var(--white);
+    padding: 3rem 0px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: block;
+    transition: font-weight ease-in-out .2s;    
+}
+.menu__links .link:hover{
+    font-weight: 600;
+}
+.menu__links .sublinks{
+    display: none;
+}
+
+/* ::::::::::: MENU:BUTTONS :::::::::::*/
+.menu__buttons{
+    margin-top: auto;
+}
+.menu__buttons .btn__contactar{
+    width: 100%;
+    padding: 1.5rem 0px;
+    border: none;
+    border-radius: 20px;
+    background: none;
+    background-color: var(--white);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color ease-in-out .2s;
+    text-align: center;
+    color: var(--black);
+}
+.menu__buttons .btn__contactar:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}

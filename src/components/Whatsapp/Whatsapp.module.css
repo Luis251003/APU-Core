@@ -1,0 +1,26 @@
+.btn__wsp{
+    position: fixed;
+    width: 7rem;
+    height: 7rem;
+    line-height: 7rem;
+    right: 3rem;
+    bottom: 3rem;
+    background-color: #25D366;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--white);
+    font-size: 3rem;
+    transition:  all ease-in-out .3s;
+}
+.btn__wsp:hover{
+    transform: scale(1.2);
+    background-color: #1a9f4b;
+}
+@media(max-width:768px){
+    .btn__wsp{
+        height: 6rem;
+        width: 6rem;
+        line-height: 6rem;
+        font-size: 2.5rem;
+    }
+}

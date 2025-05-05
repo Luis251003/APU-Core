@@ -1,0 +1,5 @@
+export {default as Nav} from './Nav/Nav'
+export {default as Tecnologias} from './Tecnologias/Tecnologias'
+export {default as Footer} from './Footer/Footer'
+export {default as Whatsapp} from './Whatsapp/Whatsapp'
+export {default as Menu} from './Menu/Menu'

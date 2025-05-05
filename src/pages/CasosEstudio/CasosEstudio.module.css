@@ -1,0 +1,149 @@
+.header{
+    padding: 7em 0px;
+    text-align: center;
+}
+.header .title{
+    font-size: 4rem;
+    line-height: 5rem;
+}
+.header .text{
+    margin: 5rem auto;
+    max-width: 90rem;
+}
+.header .subtitle{
+    font-weight: 700;
+}
+.header .cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    column-gap: 3rem;
+}
+.header .cards p{
+    border: 1px solid var(--green);
+    color: var(--green);
+    border-radius: 8px;
+    padding: 2rem 6rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    transition: all ease-in-out .3s;
+}
+.header .cards p:hover{
+    background-color: var(--light-green);
+    color: var(--white);
+}
+@media(max-width:480px){
+    .header{
+        text-align: start;
+        padding: 5rem 0px;
+    }
+    .header .cards{
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+}
+
+/* :::::::::::: SECTION: METODOLOGIAS :::::::::::: */
+.section__metodologias{
+    text-align: center;
+}
+.section__metodologias .title{
+    font-size: 4rem;
+    padding: 2rem 0px;
+    width: max-content;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--white);
+}
+.section__metodologias .cards{
+    text-align: start;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 5rem;
+    gap: 5rem;
+}
+.section__metodologias .card{
+    display: flex;
+    column-gap: 3rem;
+}
+.section__metodologias .card .card__img{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.section__metodologias .card .card__img,
+.section__metodologias .card .card__info
+{
+    width: 100%;
+}
+.section__metodologias .card img{
+    height: 100%;
+    transition: transform ease-in-out .3s;
+}
+
+.section__metodologias .card img:hover{
+    transform: scale(1.1);
+}
+
+.section__metodologias .card .card__title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.section__metodologias .card .card__text{
+    font-size: 1.4rem;
+    font-weight: lighter;
+    line-height: 2rem;
+}
+.section__metodologias .card ul{
+    list-style: disc;
+    margin-left: 1.7rem;
+    margin-top: 1rem;
+}
+.section__metodologias .card li{
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+}
+@media(max-width:1024px){
+    .section__metodologias .cards{
+        grid-template-columns: 1fr;
+        margin-top: 7rem;
+    }
+    .section__metodologias .card__img{
+        max-width: 25rem;
+    }
+}
+@media(max-width:768px){
+    .section__metodologias .card{
+        flex-direction: column;
+    }
+    .section__metodologias .title{
+        width: auto;
+    }
+    .section__metodologias .card .card__img{
+        margin: 0 auto;
+    }
+    .section__metodologias .card .card__title{
+        text-align: center;
+        margin: 5rem 0px;
+    }
+    .section__metodologias .card ul{
+        list-style: none;
+        margin-top: 3rem;
+    }
+    .section__metodologias .card li{
+        text-align: center;
+    }
+}
+@media(max-width:480px){
+    .section__metodologias{
+        text-align: start;
+    }
+    .section__metodologias .card ul{
+        list-style: disc;
+    }
+    .section__metodologias .card li{
+        text-align: start;
+    }
+    .section__metodologias .card .card__title{
+        text-align: start;
+    }
+}

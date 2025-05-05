@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+:root{
+  --black:      #000000;
+  --white:      #ffffff;
+  --dark-white: #c0c0c0;
+  --light-black:#2a2a2a;
+  --web-bg:     #101010;
+  --footer-bg:  #1A1A1A;
+  --green:      #117A65;
+  --light-green:#19C19D;
+  --gray:       #7E7E7E;
+  --border-green: linear-gradient(to bottom, #19C19D, #0C5B4A);
+
+  --primary-font: 'Montserrat';
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,*::before,*::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    background-color: var(--web-bg);
+    font-family: var(--primary-font);
+    color: var(--white);
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+p{
+    line-height: 2.7rem;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section{
+    padding: 10rem 0px;
+}
+@media(max-width){
+    .section{
+        padding: 5rem 0px;
+    }
+}
+.bd-gradient{
+    border: 3px solid transparent;
+    border-radius: 8px;
+    background-image: linear-gradient(var(--web-bg), var(--web-bg)), linear-gradient(to bottom, #19C19D, #0C5B4A);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.sp-2{
+    grid-column: span 2;
+}
+@media(max-width:480px){
+    .sp-2{
+        grid-column: span 1;
+    }
+}
+
+@media(max-width:1024px){
+    #title{font-size: 3.2rem;}
+}
+@media(max-width:768px){
+    #title{
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+}
+@media(max-width:480px){
+    #title{font-size: 2.2rem;}
+}
