@@ -10,9 +10,6 @@ import bnf__06 from '../../assets/images/Home/image-4.png'
 
 import image from '../../assets/images/Home/image.png'
 
-import ico__bd from '../../assets/icons/image 364.png'
-import ico__pc from '../../assets/icons/image 365.png'
-import ico__love from '../../assets/icons/image 366.png'
 import { Link } from "react-router-dom";
 
 const Home = ()=>{
