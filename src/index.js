@@ -1,13 +1,23 @@
+
+import { onRequestPost } from '../functions/api/contact.js';
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    const path = url.pathname.replace(/\/+$/, '');
 
-    if (url.pathname === '/api/contact') {
-      return Response.json({
-        diagnostico: 'worker-nuevo-activo',
-        metodo: request.method,
-        ruta: url.pathname,
-      });
+    if (path === '/api/contact') {
+      if (request.method !== 'POST') {
+        return Response.json(
+          { error: 'method_not_allowed' },
+          {
+            status: 405,
+            headers: { Allow: 'POST' },
+          }
+        );
+      }
+
+      return onRequestPost({ request, env });
     }
 
     return env.ASSETS.fetch(request);
