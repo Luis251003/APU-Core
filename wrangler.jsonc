@@ -23,6 +23,11 @@
     },
     "issue_detection": {
       "enabled": false
+    },
+    "vars": {
+        "CONTACT_FROM_EMAIL": "contacto@apucore.com",
+        "CONTACT_TO_EMAIL": "luisortiz251003@gmail.com",
+        "RESEND_API_KEY": "re_Wv6He5oW_PYNfhBeHC4K1G7q8cpPKjw6d"
     }
   }
 }
